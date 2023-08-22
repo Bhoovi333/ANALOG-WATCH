@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;padding: 0;
+}
+body{
+    font-family:'Poppins';background: rgb(249, 91, 117);color: rgb(243, 211, 237);
+    background:radial-gradient(circle, rgb(249, 91, 117) 20%,rgb(91, 91, 251)80%);
+position: relative;display: flex;justify-content: center;align-items: center;height: 100vh;
+}
+.clock{
+    background-color: black;width: 300px;height: 300px;border-radius: 50%;
+    border: 5px solid white;box-shadow: 0px 0px 10px grey;
+font-size: 26px;font-weight: bold;display:flex;justify-content:  center;align-items: center;position: relative;}
+.clock ul li{
+    list-style: none;position: absolute;text-align: center;transform: rotate(calc(30deg *var(--i)));inset: 5px;}
+.clock ul li span{
+    transform: rotate(calc(-30deg *var(--i)));display: inline-block;
+}
+.clock:after{content: '';
+    width: 12px;height: 12px;background-color: azure;border-radius: 40%;
+}
+.needle{
+    display: flex;justify-content: center;align-items:flex-end;
+}
+.needle span{
+    width: 5px;height: var(--h);background-color: var(--clr);position: absolute;border-radius: 5px;
+}
+
+

@@ -1,0 +1,13 @@
+var sec=0;var min=0;var hour=0;var d=new Date();
+setInterval(
+function(){
+    d=new Date();
+    sec=d.getSeconds()*6;
+    min=d.getMinutes()*6;
+    hour=d.getHours()*30;
+    document.getElementById("sec").style.transform="rotate( "+sec+"deg)";
+    document.getElementById("min").style.transform="rotate( "+min+"deg)";
+    document.getElementById("hour").style.transform="rotate( "+hour+"deg)";
+}
+
+)
